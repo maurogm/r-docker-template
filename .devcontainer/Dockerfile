@@ -40,6 +40,3 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 ENV RENV_VERSION 0.13.2
 RUN R -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.org'))"
 RUN R -e "remotes::install_github('rstudio/renv@${RENV_VERSION}')"
-
-# Install pandoc, so rmarkdown files can be rendered:
-#RUN /tmp/library-scripts/setup_pandoc.sh
