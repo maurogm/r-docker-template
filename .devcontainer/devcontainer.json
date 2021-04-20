@@ -32,9 +32,6 @@
 		"source=${localEnv:HOME}/.local/share/renv/cache,target=/root/.local/share/renv/cache,type=bind,consistency=cached"
 	]
 
-    //-e "RENV_PATHS_CACHE=${RENV_PATHS_CACHE_CONTAINER}" \
-    //-v "${RENV_PATHS_CACHE_HOST}:${RENV_PATHS_CACHE_CONTAINER}" \
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
