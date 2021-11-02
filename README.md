@@ -45,6 +45,11 @@ To enable pre-commits, run the shell script `setup_precommit.sh`.
 
 If you plan to render rmarkdown files, `pandoc` must be externally installed. Just run the script `install_pandoc.sh` provided inside the `shell_scripts` folder.
 
+### Optional: Install rstan
+
+If you plan to use `Stan` or the `rethinking` R package, you must intstall `rstan`. Just run the script `rstan_instal.sh` provided inside the `shell_scripts` folder.
+
+
 ## Known issues
 
 ### VS Code does not find `languageserver`
