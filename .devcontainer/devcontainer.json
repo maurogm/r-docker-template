@@ -14,6 +14,7 @@
 		"r.rterm.linux": "/usr/local/bin/radian",
 		"r.bracketedPaste": true,
 		"r.sessionWatcher": true,
+		"r.plot.useHttpgd": true,
 		"[r]": {
 			"editor.wordSeparators": "`~!@#%$^&*()-=+[{]}\\|;:'\",<>/?",
 			"editor.defaultFormatter": "REditorSupport.r-lsp"
