@@ -23,7 +23,7 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"ikuyadeu.r",
+		"reditorsupport.r",
 		"reditorsupport.r-lsp"
 	],
 
