@@ -10,7 +10,7 @@
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
-		"terminal.integrated.shell.linux": "/bin/bash",
+		"terminal.integrated.shell.linux": "/bin/zsh",
 		"r.rterm.linux": "/usr/local/bin/radian",
 		"r.bracketedPaste": true,
 		"r.sessionWatcher": true,
@@ -18,7 +18,10 @@
 		"[r]": {
 			"editor.wordSeparators": "`~!@#%$^&*()-=+[{]}\\|;:'\",<>/?",
 			"editor.defaultFormatter": "REditorSupport.r-lsp"
-		}
+		},
+		"r.bracketedPaste": true,
+		"editor.suggest.showMethods": true,
+		"editor.suggest.preview": true,
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
@@ -36,7 +39,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "R --version",
+	"postCreateCommand": "sudo bash .devcontainer/postCreateCommand.sh",
 
 	// Uncomment to use Docker from inside the container. See https://aka.ms/vscode-remote/samples/docker-from-docker.
 	// "mounts": [ "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind" ],
