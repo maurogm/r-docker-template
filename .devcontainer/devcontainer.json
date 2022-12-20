@@ -4,8 +4,6 @@
 	"name": "R (Community)",
 	"build": {
 		"dockerfile": "Dockerfile",
-		// Update VARIANT to pick a specific R version: latest, ... ,4.0.1 , 4.0.0
-		"args": { "VARIANT": "latest" }
 	},
 
 	// Set *default* container specific settings.json values on container create.
@@ -17,9 +15,8 @@
 		"r.plot.useHttpgd": true,
 		"[r]": {
 			"editor.wordSeparators": "`~!@#%$^&*()-=+[{]}\\|;:'\",<>/?",
-			"editor.defaultFormatter": "REditorSupport.r-lsp"
+			"editor.defaultFormatter": "REditorSupport.r-lsp",
 		},
-		"r.bracketedPaste": true,
 		"editor.suggest.showMethods": true,
 		"editor.suggest.preview": true,
 	},
@@ -27,7 +24,13 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"reditorsupport.r",
-		"reditorsupport.r-lsp"
+		"reditorsupport.r-lsp",
+		"mechatroner.rainbow-csv",
+		"GitHub.copilot",
+		"streetsidesoftware.code-spell-checker",
+		"mhutchie.git-graph",
+		"codezombiech.gitignore",
+		"quarto.quarto",
 	],
 
     // Mount the local cache of packages managed by renv in the HOST machine:
@@ -51,3 +54,4 @@
 	"remoteUser": "vscode",
 	"containerUser": "vscode",
 }
+

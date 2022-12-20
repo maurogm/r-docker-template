@@ -1,5 +1,4 @@
-# R version: latest, ... ,4.0.1 , 4.0.0
-ARG VARIANT="4.0.5"
+ARG VARIANT="4.2.0"
 FROM rocker/r-ver:${VARIANT}
 
 # Use the [Option] comment to specify true/false arguments that should appear in VS Code UX
